@@ -23,3 +23,13 @@ PanopticSegmentation
 + detresults: store instance segmentation result which is stored in a json file
 + images: store the images
 + models: store the semantic model. In **cal_panoptic.py**, we use a random matrix to replace the semantic prediction matrix. Actually, you should get the matrix by making a inference with your own semantic model.
+
+## Usage
++ validation
+```
+python cal_panoptic.py
+```
++ test
+```
+python cal_panoptic.py -t
+```
