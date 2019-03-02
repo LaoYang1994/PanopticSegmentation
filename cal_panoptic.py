@@ -60,11 +60,12 @@ label_id2channel_id = {cate['id']: i for i, cate in enumerate(cate_info)}
 stuff_channel_id2label_id = [cate['id'] for cate in cate_info if not cate['isthing']]
 stuff_channel_id2label_id.append(0)
 
+# Because we lost the following two threshold file, we just replace them with a zero array.
 # sem_threshold = np.load(cfg.sem_th)[80:]
-sem_threshold = np.random.rand(53)
+sem_threshold = np.zeros(53)
 assert sem_threshold.size == 53
 # area_threshold = np.load(cfg.area_th)
-area_threshold = np.random.rand(133)**2
+area_threshold = np.zeros(133)**2
 assert area_threshold.size == 133
 
 threshold_stuff = [0.28, 0.22, 0.26, 0.16, 0.1,
