@@ -10,10 +10,17 @@ I advise you to organize you file in the following ways.
 
 PanopticSegmentation
 ├─files
+
   ├─annotations
+  
   ├─detresults
+  
   ├─images
+  
   │  ├─test2017
+  
   │  └─val2017
+  
   └─models
+  
 
