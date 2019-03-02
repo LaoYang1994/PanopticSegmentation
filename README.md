@@ -8,7 +8,7 @@ This code is used to fuse the semantic segmentation result and instance segmenta
 ## File Organization
 I advise you to organize you file in the following ways.
 
-···
+```
 PanopticSegmentation
 ├─files
   ├─annotations
@@ -17,6 +17,6 @@ PanopticSegmentation
   │  ├─test2017
   │  └─val2017
   └─models
-···
+```
   
 
