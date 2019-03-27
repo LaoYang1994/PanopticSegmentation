@@ -1,4 +1,5 @@
 # PanopticSegmentation
+This repo provides the code to combine the semantic and instance segmentation predictions for panoptic segmentation output. Compared with the [official version](https://github.com/cocodataset/panopticapi), it tries to solve occlusion problems and takes some object relationships into account, according to the method of the third place winner in the COCO2018 panoptic segmentation competition. A detailed description can be found [here](http://presentations.cocodataset.org/ECCV18/COCO18-Panoptic-PKU_360.pdf). 
 This code is used to fuse the semantic segmentation result and instance segmentation result, which generates two-channel-pngs. We won the **third place** in COCO2018 panoptic segmentation.
 
 ## Requirements
