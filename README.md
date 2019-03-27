@@ -15,24 +15,27 @@ PanopticSegmentation
   |─detresults
 ```
 
-You can form the file organization by the tools **generate_file_organization.py**
+You can form the file organization by the tools **generate_file_organization.py**. It will generate the file structure automatically.
 
 ```
-cd 'this repo'
+cd REPO_ROOT_DIR
 python tools/generate_file_organization.py
 ```
   
 + annotations: store annotation files like panoptic_val2017.json and instances_val2017.json
 + detresults: store instance segmentation result which is stored in a json file
-+ images: store the images
-+ models: store the semantic model. In **cal_panoptic.py**, we use a random matrix to replace the semantic prediction matrix. Actually, you should get the matrix by making a inference with your own semantic model.
 
 ## Usage
+If you just want to generate the two-channel-pngs, just run as following.
 + validation
 ```
-python cal_panoptic.py
+python tools/cal_panoptic.py
 ```
-+ test
++ test (-t for test-dev)
 ```
-python cal_panoptic.py -t
+python tools/cal_panoptic.py -t
 ```
+
+If you want to evaluate the result after generating two-channel-pngs automatically, just need to add '-e'. If the two-channel-pngs have been generated and you only want to evaluate, then just add '-sc'.
+
+**If you have any question, just leave an issue!**
