@@ -36,6 +36,6 @@ python tools/cal_panoptic.py
 python tools/cal_panoptic.py -t
 ```
 
-If you want to evaluate the result after generating two-channel-pngs automatically, just need to add '-e'. If the two-channel-pngs have been generated and you only want to evaluate, then just add '-sc'.
+If you want to evaluate the result after generating two-channel-pngs automatically, just need to add '**-e**'. If the two-channel-pngs have been generated and you only want to evaluate, then just add '**-sc**'.
 
 **If you have any question, just leave an issue!**
