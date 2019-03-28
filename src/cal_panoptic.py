@@ -72,7 +72,8 @@ stuff_channel_id2label_id.append(0)
 
 # these values can be changed via experiments.
 sem_threshold = 0. # if the max stuff probability is lower than this threshold, the directly set it to void.
-stuff_area_limit = 0 # filter the stuff tha the area is lower than the threshold.
+stuff_area_limit = 0 # filter the stuff tha the area is lower than the threshold. According to the official panopticapi, the value
+                     # is set to 64 * 64
 
 # if semantic result judges one pixel to be background, but the max stuff probability
 # is larger than the threshold, then the pixel will be judged to be the stuff category.
@@ -261,6 +262,9 @@ def save_png(c1, c2, img_name):
     png_PIL.save(os.path.join(cfg.two_channel_pngs, img_name + '.png'))
 
 
+# -----------------------------------------------------------------------
+# evaluation
+# -----------------------------------------------------------------------
 def evaluate():
     # generate panoptic pictures
     print("Convert to panoptic format!!!")
