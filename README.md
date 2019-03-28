@@ -37,6 +37,8 @@ python tools/cal_panoptic.py -t
 ```
 
 ### Evaluation
+**The evaluation code is from the [official panopticapi](https://github.com/cocodataset/panopticapi)**
+
 If you want to evaluate the result after generating two-channel-pngs automatically, just need to add '**-e**'. If the two-channel-pngs have been generated and you only want to evaluate, then just add '**-sc**'.
 + for val dataset
 ```
