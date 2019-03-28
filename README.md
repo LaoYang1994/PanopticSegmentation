@@ -26,16 +26,25 @@ python tools/generate_file_organization.py
 + detresults: store instance segmentation result which is stored in a json file
 
 ## Usage
-If you just want to generate the two-channel-pngs, just run as following.
-+ validation
+### Generate Two-Channel-Pngs
++ for val dataset
 ```
 python tools/cal_panoptic.py
 ```
-+ test (-t for test-dev)
++ for test dataset
 ```
 python tools/cal_panoptic.py -t
 ```
 
+### Evaluation
 If you want to evaluate the result after generating two-channel-pngs automatically, just need to add '**-e**'. If the two-channel-pngs have been generated and you only want to evaluate, then just add '**-sc**'.
++ for val dataset
+```
+python tools/cal_panoptic.py -e   # generate two-channel-pngs and automatically evaluate the result.
+```
++ for test dataset
+```
+python tools/cal_panoptic.py -sc   # only run evaluation.
+```
 
 **If you have any question, just leave an issue!**
